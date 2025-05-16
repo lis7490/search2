@@ -22,3 +22,13 @@ def search(arr, n):
         return -1
 arr = [5, 1, 15, 30, 50, 150]
 print(search(arr, 5))
+
+from random import randint
+
+arr = []
+for i in range(100):
+    arr.append(randint(1, 1000))
+arr.sort()
+print(arr)
+print(search(arr, int(input('Введите число для поиска индекса: '))))
+
